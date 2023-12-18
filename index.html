@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/midia/icon.avif">
+    <title>Traveling - Viagem com conforto</title>
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegação -->
+        <nav id="navbar">
+            <!-- Logotipo -->
+            <img src="assets/midia/4136090.jpg" alt="" width="100px" height="auto">
+            <!-- Links de navegação -->
+            <a href="#home">Home</a>
+            <a href="#home">Sobre Nós</a>
+            <a href="#home">Serviços Empresariais</a>
+            <a href="#home">Eventos no Calendário</a>
+            <a href="#home">Membro</a>
+            <a href="#home">Contatos</a>
+            <!-- Campo de pesquisa -->
+            <div id="search-container">
+                <!-- Caixa de entrada de texto para pesquisa -->
+                <input type="text" id="search-input" placeholder="Pesquisar...">
+                <!-- Botão de pesquisa -->
+                <button id="search-button" onclick="searchFunction()">
+                    <!-- Ícone de lupa para pesquisa -->
+                    <img src="assets/midia/lupa_icone.png" alt="Ícone de Pesquisa">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Container do slideshow -->
+        <div class="slideshow-container">
+            <!-- Imagens em largura total com número e texto de legenda -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="assets/midia/img1.jpg" width="100%" height="600px">
+                <div class="superscription">Ilha paradisiaca</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="assets/midia/img2.jpg" width="100%" height="600px">
+                <div class="superscription">porto das pedras</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="assets/midia/img3.jpg" width="100%" height="600px">
+                <div class="superscription">praia da sebedoria</div>
+            </div>
+            <!-- Botões de próxima e anterior -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- The dots/circles -->
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div class="lightBox">
+            <div class="column">
+                <div class="image-container">
+                    <h2>Visite o melhor lugar para:</h2>
+                    <p class="p-lightBox">Se conectar</p>
+                    <img src="assets/midia/img4.jpg" alt="" class="img-lightBox">
+                </div>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <h2>Visite o melhor lugar para:</h2>
+                    <p class="p-lightBox">Se Relaxar</p>
+                    <img src="assets/midia/img5.jpg" alt="" class="img-lightBox">
+                </div>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <h2>Visite o melhor lugar para:</h2>
+                    <p class="p-lightBox">Se aventurar</p>
+                    <img src="assets/midia/img6.jpg" alt="" class="img-lightBox">
+                </div>
+            </div>
+        </div>
+
+        <div class="infoAdicional">
+            <img src="assets/midia/avião.jpg" alt="" width="100%">
+        </div>
+
+        <div class="area-links">
+            <div class="viagens-inter">
+                <img src="assets/midia/viagem-inter" alt="" class="iconViagensInter" width="100%">
+                <h1 class="tituloAreaLinks">Viagens Internacionais</h1>
+                <p class="textAreaLink">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rhoncus et fames dolot
+                    amet.
+                </p>
+                <button class="botaoAreaLink">more</button>
+            </div>
+            <div class="viagens-nacio">
+                <img src="assets/midia/viagem-nacio.png" alt="" class="iconViagensInter" width="100%">
+                <h1 class="tituloAreaLinks">Viagens Nacionais</h1>
+                <p class="textAreaLink">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rhoncus et fames dolot
+                    amet.
+                </p>
+                <button class="botaoAreaLink">more</button>
+            </div>
+            <div class="viagensComercial">
+                <img src="assets/midia/Viagem-Comer.jpg" alt="" class="iconViagensInter" width="100%">
+                <h1 class="tituloAreaLinks">Viagens Comerciais</h1>
+                <p class="textAreaLink">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rhoncus et fames dolot
+                    amet.
+                </p>
+                <button class="botaoAreaLink">more</button>
+            </div>
+            <div class="viagensDeIntercam">
+                <img src="assets/midia/viagensDeInter.jpg" alt="" class="iconViagensInter" width="100%">
+                <h1 class="tituloAreaLinks">Viagens de Intercâmbio</h1>
+                <p class="textAreaLink">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rhoncus et fames dolot
+                    amet.
+                </p>
+                <button class="botaoAreaLink">more</button>
+            </div>
+        </div>
+
+        <div class="propaganda">
+            <img src="assets/midia/aaa.png" alt="" width="100%">
+        </div>
+
+
+        <div class="missao">
+            <h1 class="tituloMissao">Seu sonho é nossa prioridade</h1>
+            <p class="textoMissao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum commodi nulla
+                quam officia veniam magni sint facere ea reprehenderit amet sunt laudantium veritatis quaerat
+                suscipit maxime, culpa ad iste voluptates!</p>
+            <hr class="linhaDivisao">
+            <div class="conteudo-especifico">
+                <div class="subMissao">
+                    <h3 class="subMissaoTitulo">Bagagem extra? Não se Preocupe</h3>
+                    <p class="textodoSub">Está voltando para casa com algumas malas extras? Não se preocupe, temos a
+                        solução. Voucher de peso
+                        extra com desconto, então</p>
+                    <button class="botao2">Compre agora</button>
+                </div>
+                <div class="videoum">
+                    <video width="640" height="360" controls>
+                        <source src="assets/midia/video-mala.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="light-gray-section">
+            <div class="icon">
+                <img src="assets/midia/avião_icon.png" alt="Ícone 1">
+                <div class="icon-caption">Viagem segura e com desconto</div>
+            </div>
+            <div class="icon">
+                <img src="assets/midia/email_icon.png" alt="Ícone 2">
+                <div class="icon-caption">Fale conosco atravês<br> traveling@gmail.com</div>
+            </div>
+            <div class="icon">
+                <img src="assets/midia/telephone_icon.png" alt="Ícone 3">
+                <div class="icon-caption">SAC<br>(11) 4002-8922</div>
+            </div>
+        </div>
+        <div class="dark-gray-section">
+            <div class="logo">
+                <img src="assets/midia/4136090.jpg" class="icon-rodape">
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.3686674037735!2d-46.84910942375906!3d-23.59110766268753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfaa98c1ec5cb3%3A0x735b8a2fd3f338c5!2sSENAI%20Cotia%20-%20%22Ricardo%20Lerner%22!5e0!3m2!1spt-BR!2sbr!4v1702921230044!5m2!1spt-BR!2sbr"
+                    width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map-caption">
+                    Caso tenha dificuldades em comprar sua passagem online,<br> venha até nossa sede. Teremos o prazer de ajudar você.</div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Script JavaScript -->
+    <script src="assets/js/script.js" defer></script>
+</body>
+
+</html>
